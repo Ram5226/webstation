@@ -1,0 +1,99 @@
+// header Css
+
+#header_area {  
+  background: var(--background-color);
+  padding: 10px 0;
+  .header_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+      width: 15%;
+      a {
+        
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .menu_area {
+      width: 85%;
+      ul {
+        text-align: right;
+        li {
+          display: inline-block;
+          position: relative;
+          transition: 0.5s;
+          border-radius: 5px;
+          text-align: left;
+          &::after{
+            content: '';
+            position: absolute;
+            height: 2px;
+            width: 0%;
+            background-color: #fff;
+            left: 0;
+            bottom: 0;
+            transition: 0.5s;
+          }
+          &:hover{
+            background-color: var(--button-hover-color);
+            a{
+              color: var(--hover-text);
+            }
+            &::after{
+              width: 100%;
+            }
+          }
+          
+          ul {
+            position: absolute;
+            top: 100%;
+            width: 250px;
+            background: #fff;            
+            border-radius: 3px;
+            opacity: 0;
+            visibility: hidden;
+            margin-top: 20px;
+           
+            li {
+              display: block;
+              position: relative;
+              border-bottom: 1px solid #444;
+              ul{
+                position: absolute;
+                left: 250px;
+                top: 0;
+              }
+            }
+          }
+          a {
+            font-family: "Oswald", sans-serif;
+            display: block;
+            padding: 8px 16px;
+            transition: 0.5s ease-in-out;
+            font-size: 14px;
+            line-height: 28px;
+            color: var(--text-color);
+          }
+
+          &:hover > {
+            ul {
+              opacity: 1;
+              visibility: visible;
+              position: absolute;
+              
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+}
+
+
+
+
+

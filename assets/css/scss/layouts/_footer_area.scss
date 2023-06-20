@@ -1,0 +1,14 @@
+
+
+#footer_area{
+  background: var(--background-color);
+  // padding: 10px 0;
+  .footer_bootom{
+    border-top: 1px solid var(--border-color);
+    padding: 10px 0;
+    p{
+      color: var(--text-color);
+      text-align: center;
+    }
+  }
+}

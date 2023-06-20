@@ -1,0 +1,60 @@
+// All Common Css Heare
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+img{
+  width: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+}
+.container{
+  width: 1440px;
+  margin: auto;
+}
+.clearfix::after,
+.clearfix::before{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#header_area.leaft_menu .container .header_wrapper .logo {
+    order: 2;
+}
+#header_area.leaft_menu .container .header_wrapper .menu_area {
+    order: 1;
+}
+#header_area.leaft_menu .container .header_wrapper .menu_area ul{
+   text-align: left;
+}
+#header_area.center_menu .header_wrapper {
+    display: block;
+}
+#header_area.center_menu .container .header_wrapper .logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#header_area.center_menu .container .header_wrapper .logo img{
+  width: 200px;
+  
+}
+
+#header_area.center_menu .container .header_wrapper .menu_area {
+    width: 100%;
+}
+#header_area.center_menu .container .header_wrapper .menu_area ul{
+   text-align: center;
+}
